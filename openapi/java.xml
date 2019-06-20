@@ -1,5 +1,5 @@
-<project 
-  xmlns="http://maven.apache.org/POM/4.0.0" 
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.kubernetes</groupId>
@@ -23,6 +23,7 @@
               <language>java</language>
               <gitUserId>kubernetes-client</gitUserId>
               <gitRepoId>client-java</gitRepoId>
+              <skipValidateSpec>true</skipValidateSpec>
               <configOptions>
                 <projectName>kubernetes-java-client</projectName>
                 <projectDescription>Java client for Kubernetes.</projectDescription>
@@ -44,6 +45,7 @@
                 <dateLibrary>joda</dateLibrary>
                 <useRxJava>false</useRxJava>
                 <library>okhttp-gson</library>
+                <useReflectionEqualsHashCode>true</useReflectionEqualsHashCode>
                 <type-mappings>intstr.IntOrString=IntOrString,resource.Quantity=Quantity</type-mappings>
                 <import-mappings>IntOrString=io.kubernetes.client.custom.IntOrString,Quantity=io.kubernetes.client.custom.Quantity</import-mappings>
               </configOptions>
